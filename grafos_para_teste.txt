@@ -1,0 +1,1 @@
+graph_edges_n100_02056.hcp; DIMENSION=100; DEGREE=3

@@ -1,0 +1,24 @@
+# Ambientes Virtuais (Nunca envie para o Git)
+.venv/
+my-env/
+hcp*/
+
+# Arquivos gerados pelo Python (Cache)
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de Configuração e Senhas (Segurança)
+.env
+*.env
+config.ini
+secrets.json
+
+# Pastas de IDEs e Editores
+.vscode/
+.idea/
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
