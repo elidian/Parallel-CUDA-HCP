@@ -21,5 +21,5 @@ O algoritmo foi implementado em **Python** e **C**, com utilização da bibliote
 ## 🚀 Execução
 - "criador_matriz_hamiltoniana.py" para gerar grafos k-regulares
 - "hcp_cont_dimension.py" para escolher os grafos gerados para os testes: salvo em "grafos_para_teste.txt"
-- "hcp_test.py" para testar cada grafo escolhido em "grafos_para_teste.txt": executa "new_hco_cuda_final.py" passando cada grafo
+- "hcp_test.py" para testar cada grafo escolhido em "grafos_para_teste.txt": executa "new_hcp_cuda_final.py" passando cada grafo
 
