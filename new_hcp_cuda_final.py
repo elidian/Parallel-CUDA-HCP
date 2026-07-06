@@ -167,7 +167,6 @@ def hcp(matriz_base):
         idx, idy = [e.item() for e in cp.unravel_index(cp.argmax(pesos), pesos.shape)]
 
         if not matriz[idx, idy]:
-            print(f'ciclo falso1')
             return cp.asnumpy(lista), False
         
 
@@ -179,17 +178,12 @@ def hcp(matriz_base):
         matriz[idy, idx] = False
 
         prox, back = pontas_sub_ciclo(lista, lista_inversa, idx, idy)
-
         matriz[prox, back] = False
-
-    soma_true = cp.sum(matriz)
-    print(f'\nsoma true {soma_true}')
 
     for idx in range(tamanho):
         if lista[idx] == -1:
             idy = cp.argmax(matriz[idx])
             if not matriz[idx, idy]:
-                print(f'ciclo falso2')
                 return cp.asnumpy(lista), False
             
             lista[idx] = idy
